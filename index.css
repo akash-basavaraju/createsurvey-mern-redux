@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,html {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: #ede7f6;
+}
+.container {
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+}
+.header {
+	width: 100%;
+	background: rgb(103, 58, 183);
+	color: rgba(255, 255, 255, 1);	
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.header_title{
+	display: block;
+	font-size: 2.5rem;
+	padding: 1rem;
+	margin: 0rem 2rem;
+}
+.header_description{
+	font-size: 1.5rem;
+	padding: 1rem;
+	margin: 0rem 2rem;
+	margin-top: 0rem;
+	padding-top: 0rem;
+}
+.fa-folder{
+	font-size: 22px;
+	position: absolute;
+	top: 22px;
+	left: 220px;
+	cursor: pointer;
+	text-shadow: 0px -.5px 5px #000, 0px 1px 1px #fff;
+}
+.fa-folder:hover .msg_folder {
+	display: block; margin-top: 14px;
+}
+.msg_folder{ font-size: .75em;
+width: 112px;}
+.fa-star {
+	font-size: 18px;
+	position: absolute;
+	top: 22px;
+	left: 275px;
+	cursor: pointer;
+}
+.fa-star:hover .msg_star{ display: block; margin-top: 14px;}
+.fa-palette , .fa-eye , .fa-cog, .fa-ellipsis-v{
+	font-size: 22px;
+	position: absolute;
+	top: 22px;
+	right: 365px;
+	cursor: pointer;
+	text-shadow: 0px -.5px 5px #000, 0px 1px 1px #fff;
+}
+
+.fa-palette:hover .msg_theme {display: block; margin-top: 14px; font-size: .55em;
+width: 115px;}
+.fa-eye {
+	right: 315px;
+	cursor: pointer;
+}
+.fa-eye:hover .msg_preview{display: block; margin-top: 14px;}
+.fa-cog {
+	right: 265px;
+	cursor: pointer;
+}
+.fa-cog:hover .msg_setting {display: block; margin-top: 14px;}
+.fa-ellipsis-v {
+	right: 100px;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: none;
+	cursor: pointer;
+}
+.fa-ellipsis-v:hover .msg_more {display: block; margin-top: 14px;}
+.btn_send {
+	padding: 10px 25px;
+	border: 1px solid rgba(243,240,240,1.00);
+	color: rgb(103, 58, 183);
+	border-radius: 4px;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+	right: 140px;
+	font-size: .8em;
+	font-weight: 700;
+	box-shadow: 0px 1px 1px #000;
+	cursor: pointer;
+	outline: none;
+}
+.btn_save{
+	padding: 10px 25px;
+	border-style: none;
+    color: rgb(103, 58, 183);
+	background: #fff;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	font-size: 1.2rem;
+	border-radius: 0.3rem;
+	font-weight: 700;
+	box-shadow: 0px 1px 1px #000;
+	cursor: pointer;
+	outline: none;
+	margin: 0px auto;
+    width: 10rem;
+}
+.content_footer{
+	margin: 0px auto;
+	width: 860px;
+	max-width: 100%;
+}
+.toggle_btn_group {
+	display: block;
+	margin: 134px auto;
+	max-width: 100%;
+	text-align: center;
+	width: 860px;
+	height: 48.27px;
+	background: #fff;
+	border-bottom: 1px solid rgba(240,236,236,1.00);
+	padding: 0px 30px;
+	box-shadow: 1px -3px 10px rgba(210,210,210,.3);
+}
+#question_btn, #response_btn {
+	padding: 14px 20px;
+	border: none;
+	font-size: .96em;
+	font-weight: 400;
+	background: #fff;
+	margin: 0;
+	color: rgba(138,138,138,1.00);
+	outline: none;
+	text-shadow: 0px 1px 1px rgba(224,224,224,1.00);
+	transition: all .3s ;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#question_btn:focus, #response_btn:focus {
+	border-bottom: 2px solid rgb(103, 58, 183) ;
+	color: rgb(103, 58, 183);
+}
+.content {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0px auto;
+}
+.default_model {
+	padding: 40px 45px;
+	max-width: 100%;
+	width: 860px;
+	margin: 0px auto;
+	border-left: 3px solid DodgerBlue;
+	background: rgba(255,255,255,1.00);
+}
+#form_title{
+	width: 97%;
+	float: left;
+	font-size: 2.2em;
+	font-weight: 500;
+	padding: 10px 0px;
+	border: none;
+	outline: none;
+}
+#form_desc,#short_answer,#option1,#optionOther {
+	width: 97%;
+	font-size: .95em;
+	border: none;
+	padding: 15px 0px;
+	outline: none;
+	padding-bottom: 5px;
+	color: #000;
+}
+#option1 ,#optionOther{
+	padding-top: 5px;
+	padding-left: 7px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.questions_type {
+	padding: 40px 45px;
+	max-width: 100%;
+	width: 860px;
+	margin: 0px auto;
+	border-left: 3px solid DodgerBlue;
+	background: rgba(255,255,255,1.00);
+	box-shadow: 0px -2px 7px lightgray;
+}
+
+#question_title, #question_title2, #question_title3, #question_title4 {
+	width: 63%;
+	float: left;
+	font-size: 1.5em;
+	font-weight: 500;
+	padding: 10px 0px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	outline: none;
+}
+#option, #check_option {
+	width: 47%;
+	padding: 10px 0px;
+	padding-bottom: 0;
+	display: inline-block;
+	margin-top: 18px;
+}
+#circle , #circle1, #circle2{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border:2px solid lightgray;
+	margin: 0;
+}
+
+#square , #square1 , #square2{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border:2px solid lightgray;
+	margin: 0;
+}
+
+#addoption,#addother,#addcheckoption,#addcheckother{
+	padding-left: 5px;
+	color: gray;
+	padding-right: 5px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	cursor: pointer;
+}
+#addother,#addcheckoption{color: dodgerblue;cursor: pointer;}
+label{
+	padding-left: 5px;
+	font-size: 1em;
+	color: #000;
+}
+#short_answer,#long_answer {
+	width: 57%;
+	padding: 15px 0px;
+	padding-bottom: 5px;
+	border: none;
+	border-bottom: 1px dotted lightgray;
+	outline: none;
+}
+table {
+	margin-top: 10px;
+}
+select {
+	float: right;
+	outline: none;
+	border-radius: 4px;
+	background: rgba(240,240,240,1.00);
+	color:rgba(112,112,112,1.00);
+	font-weight: 600;
+	padding: 14px 30px;
+	font-size: .96em;
+	border:none;
+}
+.question_type_footer {
+	width: 100%;
+	padding: 0px 40px;
+	padding-top: 25px;
+	margin-top: 50px;
+	border-top: 1px solid lightgray;
+}
+.fa-clone , .fa-trash, .fa-ellipsis{
+	font-size: 20px;	
+	color: gray;
+	position: absolute;
+	right: 40%;
+	cursor: pointer;
+}
+.msg_duplicate, .msg_remove, .msg_folder,.msg_star, .msg_theme,.msg_preview,.msg_setting,
+.msg_more{
+	margin-top: 7px;
+	margin-left: -20px;
+	position: absolute;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0.99);
+	border-radius: 30px;
+	font-size: .66em;
+	font-weight: 100;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #fff;
+	display: none;
+	transition: margin-top 1s ease;
+}
+.fa-clone:hover .msg_duplicate {
+	display: block;
+}
+.msg_duplicate {margin-top: 12px;}
+.fa-trash {
+	right: 36%;
+}
+.fa-trash:hover .msg_remove {
+	display: block;
+}
+.msg_remove {margin-top: 12px;}
+.fa-ellipsis {
+	color: lightgray;
+	right: 20%;
+}
+#required {
+	position: absolute;
+	padding: 7px 20px;
+	border-left: 1px solid lightgray;
+	right: 26%;
+	margin-top: -10px;
+	font-size: 1em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color:rgba(112,112,112,1.00);
+}
+
+.toggle_btn_require {
+	position: absolute;
+	width: 40px;
+	height: 15px;
+	background: rgba(225,225,225,1.00);
+	border-radius: 30px;
+	outline: none;
+	right: -30px;
+	margin-top: -16px;
+}
+.toggle_circle{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: -2px;
+	background: #fff;
+	border-radius: 100%;
+	box-shadow: 1px 1px 6px gray;
+	cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/************************media-screen********************/
+@media screen and (max-width:1200px){#required{right: 22%;}}
+@media screen and (max-width:870px) {
+	#required {
+		right: 17%;
+	}
+	.fa-clone {right: 50%;}
+	.fa-trash{right: 40%;}
+}
+@media screen and (max-width:600px){
+	#required{right: 10%;}
+	.fa-clone {
+		right: 55%;
+	}
+	.fa-trash{right: 43%;}
+	.msg_duplicate,.msg_remove {margin-top: -54px;}
+}
+ @media screen and (max-width:460px) {
+	#required {
+		right: 17%;
+	}
+	.fa-clone {right: 65%;}
+	.fa-trash{right: 53%;}
+}
