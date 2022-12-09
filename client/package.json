@@ -6,7 +6,7 @@
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "axios": "^0.18.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "mobx": "^5.0.3",
     "mobx-react": "^5.2.5",
     "mongodb": "^3.1.3",
